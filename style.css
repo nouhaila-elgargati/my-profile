@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  background: linear-gradient(180deg, #ffeaf4, #fff7fb);
+  color: #444;
+}
+
+.site-header {
+  width: 100%;
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #ffd6e9;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: #e98bbf;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.logo-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #d64f93;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #d64f93;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 20px auto 40px auto;
+  padding: 0 20px 40px 20px;
+  background: transparent;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(214, 79, 147, 0.08);
+}
+
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #d64f93;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e98bbf;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #d64f93;
+}
+
+p {
+  margin: 10px 0 0 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #d64f93;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #a93b73;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 280px;
+}
+
+.hero-profile {
+  flex: 0 0 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 4px solid #ffc7df;
+  box-shadow: 0 8px 20px rgba(255, 150, 200, 0.35);
+}
+
+.hero-actions {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 26px;
+  border-radius: 999px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn.primary {
+  background: #e98bbf;
+  color: #fff;
+  box-shadow: 0 5px 14px rgba(233, 139, 191, 0.4);
+}
+
+.btn.primary:hover {
+  background: #d64f93;
+  box-shadow: 0 7px 20px rgba(214, 79, 147, 0.4);
+}
+
+.btn.secondary {
+  background: #ffffff;
+  color: #d64f93;
+  border: 1px solid #e98bbf;
+}
+
+.btn.secondary:hover {
+  background: #ffeaf4;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.service {
+  background: #fff7fb;
+  border-radius: 14px;
+  padding: 16px 14px;
+  border: 1px solid #ffd6e9;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.social-icons i {
+  font-size: 30px;
+  color: #d64f93;
+  transition: 0.2s;
+}
+
+.social-icons i:hover {
+  color: #a93b73;
+  transform: translateY(-2px);
+}
+
+.form-wrapper {
+  margin-top: 18px;
+}
+
+.form-wrapper iframe {
+  width: 100%;
+  height: 520px;
+  border: none;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  padding: 10px 0 20px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .hero-profile {
+    justify-content: flex-start;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
